@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Your Journey | Cinematic Escapes</title>
-    <meta name="description" content="Secure your spot on one of our exclusive Indian travel adventures and find our headquarters.">
+    <title>Book Now | Contact Cinematic Escapes India Travel</title>
+    <meta name="description" content="Secure your spot on an exclusive Cinematic Escapes India adventure. Book online or find our Mumbai headquarters on the map.">
     <meta name="keywords" content="travel booking, contact travel agency, India tours, agency map location">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.cinematicescapes.com/contact.html">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Book Now | Contact Cinematic Escapes India Tours">
+    <meta property="og:description" content="Secure your spot on one of our exclusive Indian travel adventures and find our headquarters.">
+    <meta property="og:url" content="https://www.cinematicescapes.com/contact.html">
+    <meta name="twitter:card" content="summary">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,15 +40,15 @@
             <form id="travelForm" action="#" method="POST">
                 <div class="form-group">
                     <label for="fullName">Full Name</label>
-                    <input type="text" id="fullName" placeholder="Enter your full name" required>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
                 </div>
                 <div class="form-group">
                     <label for="emailAddress">Email Address</label>
-                    <input type="email" id="emailAddress" placeholder="you@domain.com" required>
+                    <input type="email" id="emailAddress" name="emailAddress" placeholder="you@domain.com" required>
                 </div>
                 <div class="form-group">
                     <label for="packageSelect">Select Odyssey</label>
-                    <select id="packageSelect" required>
+                    <select id="packageSelect" name="packageSelect" required>
                         <option value="">-- Select a Destination --</option>
                         <option value="goa">Golden Shores of Goa</option>
                         <option value="jaipur">Royal Crimson of Jaipur</option>
@@ -61,10 +71,29 @@
                 style="border:0;" 
                 allowfullscreen="" 
                 loading="lazy" 
+                title="Cinematic Escapes headquarters location map near Gateway of India, Mumbai"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
     </main>
+
+    <!-- Live Chat Widget -->
+    <div id="chat-widget">
+        <button id="chat-toggle" aria-label="Open live chat">💬</button>
+        <div id="chat-box" class="hidden">
+            <div class="chat-header">
+                <span>Cinematic Escapes Concierge</span>
+                <button id="chat-close" aria-label="Close chat">&times;</button>
+            </div>
+            <div id="chat-messages">
+                <div class="chat-msg bot">Hi there! 👋 How can we help plan your next escape?</div>
+            </div>
+            <form id="chat-form">
+                <input type="text" id="chat-input" placeholder="Type a message..." autocomplete="off" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
