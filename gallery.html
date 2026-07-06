@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Cinematic Escapes</title>
-    <meta name="description" content="View stunning images from our curated Indian travel destinations.">
-    <meta name="keywords" content="travel gallery, India photos, cinematic landscapes">
+    <title>Photo Gallery | Cinematic Escapes India Travel Tours</title>
+    <meta name="description" content="Browse stunning, high-contrast photos from our curated India travel destinations - Goa, Jaipur, Mumbai, Chennai, and Kasi.">
+    <meta name="keywords" content="travel gallery, India photos, cinematic landscapes, India travel photography">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.cinematicescapes.com/gallery.html">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://images.unsplash.com">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Photo Gallery | Cinematic Escapes India Travel Tours">
+    <meta property="og:description" content="View stunning images from our curated Indian travel destinations.">
+    <meta property="og:url" content="https://www.cinematicescapes.com/gallery.html">
+    <meta name="twitter:card" content="summary_large_image">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,22 +38,40 @@
         <h1 class="section-title">The Vault</h1>
         <div class="gallery-grid">
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=500&q=80" alt="Dramatic golden sunset over the beaches of Goa">
+                <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=500&q=80" alt="Dramatic golden sunset over the beaches of Goa" width="500" height="250" loading="lazy">
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=500&q=80" alt="High contrast deep red architecture of Jaipur palaces">
+                <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=500&q=80" alt="High contrast deep red architecture of Jaipur palaces" width="500" height="250" loading="lazy">
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1529253355930-ddbe423a519e?auto=format&fit=crop&w=500&q=80" alt="Neon lights illuminating the bustling night streets of Mumbai">
+                <img src="https://images.unsplash.com/photo-1529253355930-ddbe423a519e?auto=format&fit=crop&w=500&q=80" alt="Neon lights illuminating the bustling night streets of Mumbai" width="500" height="250" loading="lazy">
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=500&q=80" alt="Coastal horizon and historic architecture in Chennai">
+                <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=500&q=80" alt="Coastal horizon and historic architecture in Chennai" width="500" height="250" loading="lazy">
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=500&q=80" alt="Ethereal hazy morning fog and spiritual fires over the Ganges in Kasi">
+                <img src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=500&q=80" alt="Ethereal hazy morning fog and spiritual fires over the Ganges in Kasi" width="500" height="250" loading="lazy">
             </div>
         </div>
     </main>
+
+    <!-- Live Chat Widget -->
+    <div id="chat-widget">
+        <button id="chat-toggle" aria-label="Open live chat">💬</button>
+        <div id="chat-box" class="hidden">
+            <div class="chat-header">
+                <span>Cinematic Escapes Concierge</span>
+                <button id="chat-close" aria-label="Close chat">&times;</button>
+            </div>
+            <div id="chat-messages">
+                <div class="chat-msg bot">Hi there! 👋 How can we help plan your next escape?</div>
+            </div>
+            <form id="chat-form">
+                <input type="text" id="chat-input" placeholder="Type a message..." autocomplete="off" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
