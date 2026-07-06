@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Cinematic Escapes</title>
-    <meta name="description" content="Discover the agency behind the world's most dramatic and visually stunning travel itineraries.">
-    <meta name="keywords" content="about travel agency, luxury tours, cinematic travel">
+    <title>About Cinematic Escapes | Luxury India Travel Agency</title>
+    <meta name="description" content="Meet Cinematic Escapes, the agency behind the world's most dramatic, visually stunning India travel itineraries and luxury outposts.">
+    <meta name="keywords" content="about travel agency, luxury tours, cinematic travel, India travel company">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.cinematicescapes.com/about.html">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About Cinematic Escapes | Luxury India Travel Agency">
+    <meta property="og:description" content="Discover the agency behind the world's most dramatic and visually stunning travel itineraries.">
+    <meta property="og:url" content="https://www.cinematicescapes.com/about.html">
+    <meta name="twitter:card" content="summary">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,10 +37,30 @@
         <h1 class="section-title">Our Vision</h1>
         <div style="max-width: 800px; margin: 0 auto; text-align: center;">
             <p style="font-size: 20px; color: var(--gold); margin-bottom: 30px;">We don't just book vacations. We design deep, unforgettable visual odysseys.</p>
+            <h2 style="font-size: 22px; margin-bottom: 15px;">Our Story</h2>
             <p style="margin-bottom: 20px;">Cinematic Escapes was founded for travelers who crave atmosphere over standard sightseeing. Our network of guides and luxury outposts operates in regions known for their stark contrasts, deep red sunsets, and ethereal landscapes.</p>
+            <h2 style="font-size: 22px; margin-bottom: 15px;">Our Craft</h2>
             <p>From towering volcanic peaks to neon-lit ancient cityscapes, every detail of our itineraries is crafted to feel like you are stepping into a masterpiece.</p>
         </div>
     </main>
+
+    <!-- Live Chat Widget -->
+    <div id="chat-widget">
+        <button id="chat-toggle" aria-label="Open live chat">💬</button>
+        <div id="chat-box" class="hidden">
+            <div class="chat-header">
+                <span>Cinematic Escapes Concierge</span>
+                <button id="chat-close" aria-label="Close chat">&times;</button>
+            </div>
+            <div id="chat-messages">
+                <div class="chat-msg bot">Hi there! 👋 How can we help plan your next escape?</div>
+            </div>
+            <form id="chat-form">
+                <input type="text" id="chat-input" placeholder="Type a message..." autocomplete="off" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
