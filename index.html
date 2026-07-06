@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinematic Escapes | Premium Travel Experiences</title>
-    <meta name="description" content="Book dramatic, breathtaking travel destinations with Cinematic Escapes. High-contrast adventures await.">
-    <meta name="keywords" content="travel, adventures, dramatic landscapes, tour packages, vacations">
+    <title>Cinematic Escapes | Luxury Cinematic India Travel Packages</title>
+    <meta name="description" content="Book dramatic, high-contrast luxury tours across India with Cinematic Escapes - curated golden-hour beaches, palaces, and cityscapes.">
+    <meta name="keywords" content="travel, adventures, dramatic landscapes, tour packages, vacations, India tours">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.cinematicescapes.com/index.html">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://images.unsplash.com">
+
+    <!-- Open Graph / Social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cinematic Escapes | Luxury Cinematic India Travel Packages">
+    <meta property="og:description" content="Curated, high-contrast luxury journeys across India's most dramatic landscapes.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1502481851512-e9e2529bfbf9?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://www.cinematicescapes.com/index.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "Cinematic Escapes",
+      "description": "Luxury, high-contrast India travel packages covering Goa, Jaipur, Mumbai, Chennai, and Kasi.",
+      "url": "https://www.cinematicescapes.com/index.html",
+      "logo": "https://www.cinematicescapes.com/favicon.png",
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "sameAs": []
+    }
+    </script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -38,22 +67,46 @@
 
         <section class="container">
             <h2 class="section-title">Why Choose Us?</h2>
+            <p style="max-width: 800px; margin: -20px auto 40px; text-align: center; color: var(--text-light);">
+                Cinematic Escapes designs curated India travel packages for people who want more than a checklist of sights.
+                Every itinerary - from the golden shores of Goa to the royal crimson forts of Jaipur, the neon nights of Mumbai,
+                the coastal horizons of Chennai, and the ethereal haze of Kasi - is built around light, atmosphere, and story,
+                so your trip feels less like sightseeing and more like stepping into a film.
+            </p>
             <div class="grid-3">
                 <div class="card">
                     <h3>Curated Aesthetics</h3>
-                    <p>Every destination is hand-picked for its intense visual beauty and golden-hour perfection.</p>
+                    <p>Every destination in our India travel packages is hand-picked for its intense visual beauty and golden-hour perfection.</p>
                 </div>
                 <div class="card">
                     <h3>Exclusive Access</h3>
-                    <p>Wander off the grid into remote locations with our specialized, private travel guides.</p>
+                    <p>Wander off the grid into remote locations with our specialized, private travel guides who know each region's best light and least crowded hours.</p>
                 </div>
                 <div class="card">
                     <h3>Luxury Accommodations</h3>
-                    <p>Rest in highly atmospheric, ethereal lodges designed to blend with their environments.</p>
+                    <p>Rest in highly atmospheric, ethereal lodges designed to blend with their environments, from beachfront Goa stays to heritage havelis in Jaipur.</p>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Live Chat Widget -->
+    <div id="chat-widget">
+        <button id="chat-toggle" aria-label="Open live chat">💬</button>
+        <div id="chat-box" class="hidden">
+            <div class="chat-header">
+                <span>Cinematic Escapes Concierge</span>
+                <button id="chat-close" aria-label="Close chat">&times;</button>
+            </div>
+            <div id="chat-messages">
+                <div class="chat-msg bot">Hi there! 👋 How can we help plan your next escape?</div>
+            </div>
+            <form id="chat-form">
+                <input type="text" id="chat-input" placeholder="Type a message..." autocomplete="off" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
